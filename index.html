@@ -4,7 +4,6 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -12,11 +11,64 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <style>
+        .nav-link {
+            color: #27211a !important;
+        }
+        .nav-link.active {
+            border-radius:10px;
+            background-color:white
+        }
+    </style>
+    <!--<nav id="navbar-example2" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#fat">@fat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mdo">@mdo</a>
+            </li>
+        </ul>
+    </nav>-->
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light" style="background-color:#fbd15c;font-weight:bold">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#fat">在哪邊集合</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mdo">查詢資訊</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="s004">
         <form onsubmit="return search(event)">
             <fieldset>
-                <legend>想查詢你家的出遊資訊嗎？</legend>
+                <legend id="fat">在哪邊集合？</legend>
+                <div class="row" style="opacity:0.9;font-weight: bold">
+                    <div class="col-sm-12" style="padding-bottom:15px">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <button type="button" class="btn btn-warning"
+                                            style="border-radius:20px;padding-left:2em;padding-right:2em;font-weight:bold;font-size:20px">
+                                        集合地點
+                                    </button>
+                                </h5>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.7324267656622!2d120.70035381482475!3d24.216149084361838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691765c67197e7%3A0x5be119ade331aa01!2zNDI35Y-w5Lit5biC5r2t5a2Q5Y2A6ZuF5r2t6Lev5LiA5q61MTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1661162190142!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend id="mdo">想查詢你家的出遊資訊嗎？</legend>
                 <div class="inner-form">
                     <div class="input-field">
                         <div class="choices" data-type="text" aria-haspopup="true" aria-expanded="false" dir="ltr">
@@ -42,6 +94,135 @@
                     </div>
                 </div>
             </fieldset>
+            <fieldset>
+                <div class="row" style="opacity:0.9;font-weight: bold">
+                    <div class="col-sm-12" style="padding-bottom:15px">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <button type="button" class="btn btn-warning"
+                                            style="border-radius:20px;padding-left:2em;padding-right:2em;font-weight:bold;font-size:20px">
+                                        費用計算說明
+                                    </button>
+                                </h5>
+                                <div>
+                                    ※統一說明，此次旅遊計費方式，
+                                    <span style="color:#c43b3b">小孩皆不列入收費</span>
+                                    ，僅計算各家大人，
+                                    <span style="color:#c43b3b">除門票依人頭收費</span>
+                                    才列入計算，就按照相對年齡收費
+                                    <br />
+                                    住宿計費方式，則為
+                                    <span style="color:#c43b3b">「民宿包棟費用」</span>
+                                    除以
+                                    <span style="color:#c43b3b">「出遊所需總房間數」</span>
+                                    乘以
+                                    <span style="color:#c43b3b">「各家的房間數」</span>
+                                    <br />
+                                    還不用付錢 ! 還不用付錢 ! 還不用付錢 ! 只是先讓大家知道，二日遊的費用項目喔，實際費用到時會在跟大家通知。
+                                    <hr />
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <span class="badge badge-pill badge-info" style="font-size:18px">保險費用</span>
+                                        <br />
+                                        旅遊平安險
+                                        <span style="color:#c43b3b">60萬</span>
+                                        +醫療險
+                                        <span style="color:#c43b3b">6萬</span>
+                                        (<span style="color:#c43b3b">15歲以下</span>)
+                                        <br />
+                                        旅遊平安險
+                                        <span style="color:#c43b3b">200萬</span>
+                                        +醫療險
+                                        <span style="color:#c43b3b">20萬</span>
+                                        (<span style="color:#c43b3b">15歲以上</span>)
+                                        <br />
+                                        <span style="color:#c43b3b">※註：15歲以下固定保額最高60萬</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <span class="badge badge-pill badge-info" style="font-size:18px">計算方式</span>
+                                        <br />
+                                        NT$220 / 10 (15歲以下人數) =
+                                        <span style="color:#c43b3b">NT$22 (每人)</span>
+                                        <br />
+                                        NT$2409 / 33 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$73 (每人)</span>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <span class="badge badge-pill badge-info" style="font-size:18px">交通費用</span>
+                                        <br />
+                                        內含停車、過路、司機導遊小費
+                                        <br />
+                                        旅責險
+                                        <br />
+                                        <span style="color:#c43b3b">※註：政府規定遊覽車公司必須保旅責險</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <span class="badge badge-pill badge-info" style="font-size:18px">計算方式</span>
+                                        <br />
+                                        NT$25,000 / 33 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$758 (每人)</span>
+                                        <br />
+                                        NT$4,300 / 43 (總人數) =
+                                        <span style="color:#c43b3b">NT$100 (每人)</span>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <span class="badge badge-pill badge-info" style="font-size:18px">餐膳費用</span>
+                                        <br />
+                                        包含兩日的早餐、午餐、晚餐
+                                        <br />
+                                        <span style="color:#c43b3b">※註：第一天早餐丞尉哥準備，第二天早餐民宿準備</span>
+                                        <br />
+                                        <span style="color:#c43b3b">※註：兩日午餐、晚餐都是合菜</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <span class="badge badge-pill badge-info" style="font-size:18px">計算方式</span>
+                                        <br />
+                                        第一天早餐
+                                        <span style="color:#c43b3b">NT$60 (每人)</span>
+                                        <br />
+                                        第一天午餐 NT$12000 / 33 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$364 (每人)</span>
+                                        <br />
+                                        第一天晚餐 NT$12000 / 33 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$364 (每人)</span>
+                                        <hr />
+                                        第二天早餐
+                                        <span style="color:#c43b3b">NT$100 (每人)</span>
+                                        <br />
+                                        第二天午餐 NT$12000 / 33 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$364 (每人)</span>
+                                        <br />
+                                        第二天晚餐 NT$20000 / 33 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$607 (每人)</span>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <span class="badge badge-pill badge-info" style="font-size:18px">住宿費用</span>
+                                        <br />
+                                        包棟民宿
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <span class="badge badge-pill badge-info" style="font-size:18px">計算方式</span>
+                                        <br />
+                                        NT$53800 / 16 (總房間數) =
+                                        <span style="color:#c43b3b">NT$3363 (每間)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
             <fieldset id="info" style="display:none">
                 <div class="row" style="opacity:0.9;font-weight: bold">
                     <div class="col-sm-12" style="padding-bottom:15px">
@@ -49,7 +230,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">
                                     <button type="button" class="btn btn-danger"
-                                            style="border-radius:20px;padding-left:2em;padding-right:2em;font-weight:bold">
+                                            style="border-radius:20px;padding-left:2em;padding-right:2em;font-weight:bold;font-size:20px">
                                         費用
                                     </button>
                                 </h5>
@@ -64,7 +245,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">
                                     <button type="button" class="btn btn-success"
-                                            style="border-radius:20px;padding-left:2em;padding-right:2em;font-weight:bold">
+                                            style="border-radius:20px;padding-left:2em;padding-right:2em;font-weight:bold;font-size:20px">
                                         成員
                                     </button>
                                 </h5>

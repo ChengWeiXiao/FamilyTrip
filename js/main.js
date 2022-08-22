@@ -55,6 +55,21 @@ var feeList = [
     { Family: "H", Insurance: 168, TourBus: 1816, Meal: 3699, Room: 3363, Total: 9046 },
 ];
 
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+            document.getElementById('navbar-example2').classList.add('fixed-top');
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+            document.getElementById('navbar-example2').classList.remove('fixed-top');
+            // remove padding top from body
+            document.body.style.paddingTop = '0';
+        }
+    });
+}); 
+
 function search(e) {
     e.preventDefault(e);
     var PID = $("#choices-text-preset-values").val();
@@ -106,7 +121,7 @@ function GetFeeHtml(familyFee) {
         var total = x.Insurance + x.TourBus + x.Meal + x.Room;
         familyFeeHtml += "<p style=\"border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;background-color:#a1e7cd\">保險費用</p>";
         familyFeeHtml += "<p class=\"card-text\">" + formatter.format(x.Insurance) + "</p>";
-        familyFeeHtml += "<p style=\"border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;background-color:#a1e7cd\">遊覽車費用</p>";
+        familyFeeHtml += "<p style=\"border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;background-color:#a1e7cd\">交通費用</p>";
         familyFeeHtml += "<p class=\"card-text\">" + formatter.format(x.TourBus) + "</p>";
         familyFeeHtml += "<p style=\"border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;background-color:#a1e7cd\">餐膳費用</p>";
         familyFeeHtml += "<p class=\"card-text\">" + formatter.format(x.Meal) + "</p>";

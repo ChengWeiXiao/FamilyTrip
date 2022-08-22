@@ -818,7 +818,7 @@ legend {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: Consolas, sans-serif;
   background: url("../images/backgroundImg.jpg");
   background-size: cover;
   background-position: center center;
