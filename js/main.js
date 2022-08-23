@@ -55,6 +55,52 @@ var feeList = [
     { Family: "H", Insurance: 168, TourBus: 1816, Meal: 3699, Room: 3363, Total: 9046 },
 ];
 
+var roomList = [
+    { Family: "A", Name: "林寶玉", Room: "A", Type: "四人房", House: "田心鄉村民宿" },
+    { Family: "A", Name: "蕭錦義", Room: "A", Type: "四人房", House: "田心鄉村民宿" },
+    { Family: "A", Name: "巫清蘭", Room: "A", Type: "四人房", House: "田心鄉村民宿" },
+    { Family: "A", Name: "蕭博元", Room: "B", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "A", Name: "蔡菁文", Room: "B", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "A", Name: "蕭勻芯", Room: "B", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "A", Name: "蕭恩妤", Room: "B", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "A", Name: "蕭丞尉", Room: "C", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "A", Name: "盧怡君", Room: "C", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "B", Name: "蕭錦裕", Room: "D", Type: "雙人", House: "水雲山莊民宿" },
+    { Family: "B", Name: "陳阿愛", Room: "D", Type: "雙人", House: "水雲山莊民宿" },
+    { Family: "B", Name: "蕭伊廷", Room: "E", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "B", Name: "莊庭翎", Room: "E", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "B", Name: "蕭亦翎", Room: "F", Type: "雙人", House: "水雲山莊民宿" },
+    { Family: "B", Name: "吳偵瑜", Room: "F", Type: "雙人", House: "水雲山莊民宿" },
+    { Family: "B", Name: "蕭臣鈞", Room: "F", Type: "雙人", House: "水雲山莊民宿" },
+    { Family: "C", Name: "蕭椀如", Room: "G", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "C", Name: "李旻儒", Room: "G", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "C", Name: "李清珪", Room: "H", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "C", Name: "林芬叙", Room: "H", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "D", Name: "蕭進雄", Room: "I", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "D", Name: "簡美玉", Room: "I", Type: "雙人", House: "田心鄉村民宿" },
+    { Family: "D", Name: "蕭錦順", Room: "J", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "D", Name: "陳香如", Room: "J", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "D", Name: "蕭閎謙", Room: "J", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "D", Name: "蕭錦全", Room: "K", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "D", Name: "蘇歆喻", Room: "K", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "D", Name: "蕭羽晴", Room: "K", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "D", Name: "蕭宇庭", Room: "K", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "E", Name: "郭志宏", Room: "L", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "E", Name: "蕭淑娟", Room: "L", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "E", Name: "郭宸妤", Room: "L", Type: "四人房", House: "水雲山莊民宿" },
+    { Family: "F", Name: "蔡淵能", Room: "M", Type: "雙人", House: "水雲山莊民宿" },
+    { Family: "F", Name: "陳素珍", Room: "M", Type: "雙人", House: "水雲山莊民宿" },
+    { Family: "G", Name: "羅龍森", Room: "N", Type: "雙人", House: "水雲山莊民宿" },
+    { Family: "G", Name: "林麗碧", Room: "N", Type: "雙人", House: "水雲山莊民宿" },
+    { Family: "G", Name: "羅家文", Room: "O", Type: "小木屋", House: "田心鄉村民宿" },
+    { Family: "G", Name: "黃珮鈞", Room: "O", Type: "小木屋", House: "田心鄉村民宿" },
+    { Family: "G", Name: "羅于媃", Room: "O", Type: "小木屋", House: "田心鄉村民宿" },
+    { Family: "G", Name: "張淳茵", Room: "O", Type: "小木屋", House: "田心鄉村民宿" },
+    { Family: "H", Name: "蕭錦俊", Room: "P", Type: "小木屋", House: "田心鄉村民宿" },
+    { Family: "H", Name: "黃玉緞", Room: "P", Type: "小木屋", House: "田心鄉村民宿" },
+    { Family: "H", Name: "和宣帆", Room: "P", Type: "小木屋", House: "田心鄉村民宿" },
+];
+
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
@@ -68,7 +114,11 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.style.paddingTop = '0';
         }
     });
-}); 
+});
+
+window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+}
 
 function search(e) {
     e.preventDefault(e);
@@ -81,11 +131,17 @@ function search(e) {
         var familyFeeHtml = GetFeeHtml(familyFee);
 
         var familyPeople = peopleList.filter(x => x.Family === family);
-        var familyPeopleHtml = GetPeopleHtml(familyPeople);
+        var familyPeopleHtml = GetPeopleHtml(PID,familyPeople);
+
+        var familyRoom = roomList.filter(x => x.Family === family);
+        var familyRoomHtml = GetRoomHtml(familyRoom);
 
         $("#familyFee").html(familyFeeHtml);
         $("#familyPeople").html(familyPeopleHtml);
+        $("#familyRoom").html(familyRoomHtml);
         $("#info").show();
+        $("html, body").animate(
+            { scrollTop: $('#infoStopHere').offset().top }, 200);
     } else {
         $("#familyFee").html("");
         $("#familyPeople").html("");
@@ -98,11 +154,15 @@ function search(e) {
     }
 }
 
-function GetPeopleHtml(familyPeople) {
+function GetPeopleHtml(PID,familyPeople) {
     var familyPeopleHtml = "";
     familyPeople.forEach(x => {
         familyPeopleHtml += "<p style=\"border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;background-color:#a1e7cd\">" + x.Name + "</p>";
-        familyPeopleHtml += "<p class=\"card-text\">身分證字號：" + x.PID + "</p>";
+        if (x.PID === PID) {
+            familyPeopleHtml += "<p class=\"card-text\">身分證字號：" + x.PID + "</p>";
+        } else {
+            familyPeopleHtml += "<p class=\"card-text\">身分證字號：" + GetMask(x.PID) + "</p>";
+        }
         familyPeopleHtml += "<p class=\"card-text\">出生年月日：" + x.Birthday + "</p>";
         familyPeopleHtml += "<p class=\"card-text\">飲食習慣：" + x.MealHabbit + "</p>";
     });
@@ -128,8 +188,43 @@ function GetFeeHtml(familyFee) {
         familyFeeHtml += "<p style=\"border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;background-color:#a1e7cd\">住宿費用</p>";
         familyFeeHtml += "<p class=\"card-text\">" + formatter.format(x.Room) + "</p>";
         familyFeeHtml += "<hr />";
-        familyFeeHtml += "<p style=\"border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;background-color:#e7b0a1\">總計(約)</p>";
+        familyFeeHtml += "<p style=\"border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;background-color:#ffc7b8\">總計(約)</p>";
         familyFeeHtml += "<p class=\"card-text\">" + formatter.format(total) + "</p>";
     });
     return familyFeeHtml;
+}
+
+function GetRoomHtml(familyRoom) {
+    var familyRoomHtml = "";
+    const a = [];
+    const map = new Map();
+    for (const item of familyRoom) {
+        if (!map.has(item.Room)) {
+            map.set(item.Room, true);    // set any value to Map
+            a.push({
+                Room: item.Room,
+                House: item.House,
+                Type: item.Type
+            });
+        }
+    }
+    a.forEach(x => {
+        familyRoomHtml += "<p style=\"border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;background-color:#a1e7cd\">" +x.House + " " + x.Type + "</p>";
+        familyRoom.filter(y => y.Room === x.Room).forEach(z => {
+            familyRoomHtml += "<p class=\"card-text\">姓名：" + z.Name + "</p>";
+        })
+    })
+    return familyRoomHtml;
+}
+
+function GetMask(PID) {
+    var newPID=""
+    for (i = 0; i < PID.length; i++) {
+        if ((i + 1) % 2 == 0) {
+            newPID += "*";
+        } else {
+            newPID += PID[i];
+        }
+    }
+    return newPID;
 }

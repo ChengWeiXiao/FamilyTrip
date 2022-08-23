@@ -819,19 +819,19 @@ legend {
   -ms-flex-align: center;
       align-items: center;
   font-family: Consolas, sans-serif;
-  background: url("../images/backgroundImg.jpg");
+  background: url("../images/backgroundImg.png");
   background-size: cover;
   background-position: center center;
   padding: 15px;
 }
 
 .s004 form {
-  width: 80%;
+  width: 90%;
 /*  max-width: 790px;
 */}
 
 .s004 form legend {
-  font-size: 50px;
+  font-size: 22px;
   color: #fff;
   font-weight: 800;
   text-align: center;
