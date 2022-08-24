@@ -970,3 +970,12 @@ legend {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+.nav-link {
+    color: #27211a !important;
+}
+
+.nav-link.active {
+    border-radius: 10px;
+    background-color: white
+}

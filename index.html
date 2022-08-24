@@ -1,45 +1,33 @@
 <html>
 <head>
     <title>國慶日家族旅遊小工具</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </head>
-<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-    <style>
-        .nav-link {
-            color: #27211a !important;
-        }
-
-            .nav-link.active {
-                border-radius: 10px;
-                background-color: white
-            }
-    </style>
-    <!--<nav id="navbar-example2" class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#fat">@fat</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#mdo">@mdo</a>
-            </li>
-        </ul>
-    </nav>-->
-    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light" style="background-color:#fbd15c;font-weight:bold">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+<body data-spy="scroll" data-target="#tripNavbar" data-offset="0">
+    <nav id="tripNavbar" class="navbar navbar-expand-lg navbar-light" style="background-color:#fbd15c;font-weight:bold">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tripNavbarHanb" aria-controls="tripNavbarHanb" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <div class="collapse navbar-collapse justify-content-md-center" id="tripNavbarHanb">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#when">集合時間</a>
@@ -62,7 +50,7 @@
     <div class="s004">
         <form onsubmit="return search(event)">
             <fieldset>
-                <legend id="when">我們幾點集合領早餐？</legend>
+                <legend id="when">幾點集合領早餐？</legend>
                 <div class="row" style="opacity:0.9;font-weight: bold">
                     <div class="col-sm-6" style="padding-bottom:15px">
                         <div class="card">
@@ -113,7 +101,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend id="journey">我們要去哪些地方玩？</legend>
+                <legend id="journey">要去哪些地方玩？</legend>
                 <div class="row" style="opacity:0.9;font-weight: bold">
                     <div class="col-sm-12" style="padding-bottom:15px">
                         <div class="card">
@@ -446,6 +434,8 @@
                                     <span style="color:#c43b3b">除門票依人頭收費</span>
                                     才列入計算，就按照相對年齡收費
                                     <br />
+                                    總金額以家庭為單位，「義哥家、裕叔家、叔公家、姑丈家、姊夫家、沙鹿親家、家文叔家、阿俊伯家」
+                                    <br />
                                     住宿計費方式，則為
                                     <span style="color:#c43b3b">「民宿包棟費用」</span>
                                     除以
@@ -480,7 +470,7 @@
                                         NT$220 / 10 (15歲以下人數) =
                                         <span style="color:#c43b3b">NT$22 (每人)</span>
                                         <br />
-                                        NT$2409 / 33 (15歲以上人數) =
+                                        NT$2263 / 31 (15歲以上人數) =
                                         <span style="color:#c43b3b">NT$73 (每人)</span>
                                     </div>
                                 </div>
@@ -498,10 +488,10 @@
                                     <div class="col-sm-6">
                                         <span class="badge badge-pill badge-info" style="font-size: 14px; margin-bottom: 1em">計算方式</span>
                                         <br />
-                                        NT$25,000 / 33 (15歲以上人數) =
+                                        NT$25,000 / 29 (15歲以上人數) =
                                         <span style="color:#c43b3b">NT$758 (每人)</span>
                                         <br />
-                                        NT$4,300 / 43 (總人數) =
+                                        NT$3,900 / 39 (總人數) =
                                         <span style="color:#c43b3b">NT$100 (每人)</span>
                                     </div>
                                 </div>
@@ -519,23 +509,23 @@
                                     <div class="col-sm-6">
                                         <span class="badge badge-pill badge-info" style="font-size: 14px; margin-bottom: 1em">計算方式</span>
                                         <br />
-                                        第一天早餐
-                                        <span style="color:#c43b3b">NT$60 (每人)</span>
+                                        第一天早餐 NT$60 * 34 (第一天早餐數量) / 27(第一天早餐大人的數量) =
+                                        <span style="color:#c43b3b">NT$76 (每人)</span>
                                         <br />
-                                        第一天午餐 NT$12000 / 33 (15歲以上人數) =
-                                        <span style="color:#c43b3b">NT$364 (每人)</span>
+                                        第一天午餐 NT$12000 / 31 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$388 (每人)</span>
                                         <br />
-                                        第一天晚餐 NT$12000 / 33 (15歲以上人數) =
-                                        <span style="color:#c43b3b">NT$364 (每人)</span>
+                                        第一天晚餐 NT$12000 / 31 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$388 (每人)</span>
                                         <hr />
-                                        第二天早餐
-                                        <span style="color:#c43b3b">NT$100 (每人)</span>
+                                        第二天早餐 NT$65 * 42 (第二天早餐數量) / 31(第二天早餐大人的數量) =
+                                        <span style="color:#c43b3b">NT$89 (每人)</span>
                                         <br />
-                                        第二天午餐 NT$12000 / 33 (15歲以上人數) =
-                                        <span style="color:#c43b3b">NT$364 (每人)</span>
+                                        第二天午餐 NT$12000 / 31 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$388 (每人)</span>
                                         <br />
-                                        第二天晚餐 NT$20000 / 33 (15歲以上人數) =
-                                        <span style="color:#c43b3b">NT$607 (每人)</span>
+                                        第二天晚餐 NT$20000 / 31 (15歲以上人數) =
+                                        <span style="color:#c43b3b">NT$646 (每人)</span>
                                     </div>
                                 </div>
                                 <hr />
@@ -548,8 +538,8 @@
                                     <div class="col-sm-6">
                                         <span class="badge badge-pill badge-info" style="font-size: 14px; margin-bottom: 1em">計算方式</span>
                                         <br />
-                                        NT$53800 / 16 (總房間數) =
-                                        <span style="color:#c43b3b">NT$3363 (每間)</span>
+                                        NT$51300 / 15 (總房間數) =
+                                        <span style="color:#c43b3b">NT$3420 (每間)</span>
                                     </div>
                                 </div>
                                 <hr />
@@ -653,6 +643,5 @@
             </fieldset>
         </form>
     </div>
-    <script src="js/main.js"></script>
 </body>
 </html>
