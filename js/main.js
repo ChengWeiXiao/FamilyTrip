@@ -29,7 +29,7 @@ var peopleList = [
     { Family: "姑丈家", Name: "郭志宏", PID: "L122122872", Birthday: "1974-12-10", MealHabbit: "無特別需求", House: "水雲山莊民宿", Room: "L", Type: "四人房", IsTakeBus: "搭遊覽車", FirstBreak: "西式", SecondBreak: "西式" },
     { Family: "姑丈家", Name: "蕭淑娟", PID: "L222439614", Birthday: "1976-12-24", MealHabbit: "無特別需求", House: "水雲山莊民宿", Room: "L", Type: "四人房", IsTakeBus: "搭遊覽車", FirstBreak: "中式", SecondBreak: "中式" },
     { Family: "姑丈家", Name: "郭宸妤", PID: "B224678915", Birthday: "2013-11-23", MealHabbit: "無特別需求", House: "水雲山莊民宿", Room: "L", Type: "四人房", IsTakeBus: "搭遊覽車", FirstBreak: "西式", SecondBreak: "西式" },
-    { Family: "叔公家", Name: "蕭錦順", PID: "L122553925", Birthday: "1978-12-18", MealHabbit: "無特別需求", House: "水雲山莊民宿", Room: "M", Type: "四人房", IsTakeBus: "搭遊覽車", FirstBreak: "中式", SecondBreak: "中式" },
+    { Family: "叔公家", Name: "蕭錦順", PID: "L122453925", Birthday: "1978-12-18", MealHabbit: "無特別需求", House: "水雲山莊民宿", Room: "M", Type: "四人房", IsTakeBus: "搭遊覽車", FirstBreak: "中式", SecondBreak: "中式" },
     { Family: "叔公家", Name: "陳香如", PID: "L222429896", Birthday: "1980-02-23", MealHabbit: "無特別需求", House: "水雲山莊民宿", Room: "M", Type: "四人房", IsTakeBus: "搭遊覽車", FirstBreak: "中式", SecondBreak: "中式" },
     { Family: "叔公家", Name: "蕭閎謙", PID: "L125912290", Birthday: "2020-05-27", MealHabbit: "無特別需求", House: "水雲山莊民宿", Room: "M", Type: "四人房", IsTakeBus: "搭遊覽車", FirstBreak: "中式", SecondBreak: "中式" },
     { Family: "叔公家", Name: "蕭錦全", PID: "L122802044", Birthday: "1979-12-09", MealHabbit: "無特別需求", House: "水雲山莊民宿", Room: "N", Type: "四人房", IsTakeBus: "搭遊覽車", FirstBreak: "中式", SecondBreak: "中式" },
